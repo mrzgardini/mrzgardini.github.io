@@ -1,11 +1,13 @@
-<rss>
+<rss version="2.0">
 <channel>
 <title>Maurizio</title>
 
 <item>
+<description>test1</description>
 <link>https://mrzgardini.github.io/writings/index.htm#2024-02-04T15:17:28+0000</link>
 </item>
 <item>
+<description>test2</description>
 <link>https://mrzgardini.github.io/writings/index.htm#test</link>
 </item>
 
