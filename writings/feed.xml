@@ -5,7 +5,7 @@
 
 <item>
 <description>
-Mi sono ripromesso uno stile sintetico e sobrio ma non ho resistito. Prova del mathjax: $$ (α + iβ) + (γ + iδ) + (α + γ) + i(β + δ) $$
+Mi sono ripromesso uno stile sintetico e sobrio ma non ho resistito. Prova del mathjax: $$ (α + iβ) + (γ + iδ) = (α + γ) + i(β + δ) $$
 
 </description>
 <link>
