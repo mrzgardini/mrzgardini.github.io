@@ -5,6 +5,17 @@
 
 <item>
 <description>
+Modello di Black-Scholes-Merton <div class='math'>$$S_T = S_0 \exp ((r - 1/2 sigma^2) T + sigma \sqrt{T) z})$$</div>
+
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-02-20 16:42:08
+</link>
+</item>
+
+
+<item>
+<description>
 Graph convolutional networks pythonosa per scoprire le interazioni molecolari dei farmaci! È simpatico che Zecheng Yin usi il quaderno jupyter a mo di terminale. <a href='https://arxiv.org/pdf/2311.07632.pdf'>https://arxiv.org/pdf/2311.07632.pdf</a>
 
 </description>
