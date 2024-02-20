@@ -5,7 +5,7 @@
 
 <item>
 <description>
-Modello di Black-Scholes-Merton <div class='math'>$$S_T = S_0 \exp ((r - 1/2 sigma^2) T + sigma \sqrt{T) z})$$</div>
+Modello di Black-Scholes-Merton: <a href='https://mrzgardini.github.io/writings/documenti/2.pdf'>https://mrzgardini.github.io/writings/documenti/2.pdf</a><br> 
 
 </description>
 <link>
