@@ -5,6 +5,18 @@
 
 <item>
 <description>
+<![CDATA[Un gruppo di ricerca sotto la direzione di Gilles Kahn presso l'INRIA di Sophia Antipolis, in Francia, sta attualmente lavorando su strumenti meccanici per supportare la semantica in questo stile; si sono concentrati sulla valutazione o sull'esecuzione fino a un valore o stato finale, quindi seguendo il loro esempio questo particolare tipo di semantica operativa strutturale è talvolta chiamata "semantica naturale".
+Glynn Winskel, Formal Semantics of Programming Languages, Mit, 1994.
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-03-13 07:01:36
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Boundary conditions at infinity for Black–Scholes equations <a href='https://arxiv.org/pdf/2401.05549.pdf'>https://arxiv.org/pdf/2401.05549.pdf</a>
 ]]>
 </description>
