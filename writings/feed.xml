@@ -5,6 +5,17 @@
 
 <item>
 <description>
+<![CDATA[Use Python Pandas DataFrames in MATLAB. <a href='https://it.mathworks.com/help/matlab/matlab_external/python-pandas-dataframes.html'>https://it.mathworks.com/help/matlab/matlab_external/python-pandas-dataframes.html</a>
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-03-28 07:19:40
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Deep Limit Order Book Forecasting. <a href='https://arxiv.org/pdf/2403.09267.pdf'>https://arxiv.org/pdf/2403.09267.pdf</a>
 ]]>
 </description>
