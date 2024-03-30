@@ -5,6 +5,18 @@
 
 <item>
 <description>
+<![CDATA[Methods for shrinking covariance matrices using a cosine similarity target.
+Bloomberg <a href='https://github.com/bloomberg/semantic-similarity-covariance-shrinkage'>https://github.com/bloomberg/semantic-similarity-covariance-shrinkage</a>
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-03-30 23:27:15
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Whole-body simulation of realistic fruit fly locomotion with deep reinforcement learning.
 Google deepmind <a href='https://www.biorxiv.org/content/10.1101/2024.03.11.584515v1.full.pdf'>https://www.biorxiv.org/content/10.1101/2024.03.11.584515v1.full.pdf</a>
 
