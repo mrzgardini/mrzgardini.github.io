@@ -56,6 +56,15 @@ Logica matematica, teoria dei numeri, calcolo mentale, giganti sistemi di equazi
 
 
 
+<div class='data' id='2024-04-10 15:00:50'>
+2024-04-10 15:00:50
+</div>
+<div>
+Formule negli indicizzatori, matrici cartesiane, taaanti warning, gira in backtest, conti della serva. Stase/domani credo di operare in tempo reale (Si aggiungeranno circa 50 righe alla logica).<br> df['op'] = 0<br> for x in range(len(df)):<br>     if df['x'].loc[x] > df['y'].loc[x]:<br>         y = x - 1<br>         if df['x'].loc[y] <= df['y'].loc[y]:<br>             df['op'].loc[x] = 'BUY'<br>     if df['x'].loc[x] <= df['y'].loc[x]:<br>         y = x - 1<br>         if df['x'].loc[y] > df['y'].loc[y]:<br>             df['op'].loc[x] = 'SELL'<br> df['w'] = 0<br> for x in range(len(df)):<br>     if df['op'].loc[x] == 'BUY':<br>         df['w'].loc[x] = df['close'].loc[x]<br> df['z'] = 0<br> for x in range(len(df)):<br>     if df['op'].loc[x] == 'SELL':<br>         df['z'].loc[x] = df['close'].loc[x]<br> comprato = df['w'].sum()<br> venduto = df['z'].sum()<br> 
+</div>
+<br>
+
+
 <div class='data' id='2024-04-10 15:00:25'>
 2024-04-10 15:00:25
 </div>
