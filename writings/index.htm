@@ -56,6 +56,15 @@ Logica matematica, teoria dei numeri, calcolo mentale, giganti sistemi di equazi
 
 
 
+<div class='data' id='2024-04-10 16:44:46'>
+2024-04-10 16:44:46
+</div>
+<div>
+Per fortuna microsoft ha fatto il porting su visual studio code di una marea di strumenti per gestire i sorgenti python. Su cosa continuo a lavorare oggi dopo ieri notte:<br> <pre>def data():<br>     time.sleep(1)<br>     price = client.avg_price(symbol = 'BTCUSDT')<br>     price_df = pd.json_normalize(price)<br>     df = pd.concat([df, price_df])<br> def moving_average():<br>     df["x"]=df["price"].rolling(window=5, min_periods=5).mean()<br>     df["y"]=df["price"].rolling(window=21, min_periods=21).mean()<br>     df['x'] = df['x'].fillna(0)<br>     df['y'] = df['y'].fillna(0)<br> def logic():<br>     count1 = count1 + 1<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] <= df['y'].loc[y]:<br>                 df['op'].loc[x] = 'BUY'<br>                 df['count'].loc[x] = count1<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] > df['y'].loc[y]:<br>                 df['op'].loc[x] = 0<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():  <br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] > df['y'].loc[y]:<br>                 df['op'].loc[x] = 'SELL'<br>                 df['count'].loc[x] = count1<br>     if (df['x'].loc[x]).any() <= (df['y'].loc[x]).any():<br>             y = x - 1<br>             if df['x'].loc[y] <= df['y'].loc[y]:<br>                 df['op'].loc[x] = 0<br> def execution():<br>     count2 = count2 + 1<br>     if df['op'].loc[i] == 'BUY':<br>         if df['count'].loc[i] > count2:<br>             print('buy')</pre><br> 
+</div>
+<br>
+
+
 <div class='data' id='2024-04-10 16:43:56'>
 2024-04-10 16:43:56
 </div>
