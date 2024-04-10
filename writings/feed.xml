@@ -5,6 +5,17 @@
 
 <item>
 <description>
+<![CDATA[Qualcuno usa kindle? Oltre ad aver trovato nella mia libreria AA.VV., Pi greco, con le sue 69 pagine delle prime 10000 cifre ho anche Luigi Garlaschelli, Piccola grammatica gratuita di esperanto ma non so come ottenere il pdf. Si può fare?
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-04-10 17:18:44
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Per fortuna microsoft ha fatto il porting su visual studio code di una marea di strumenti per gestire i sorgenti python. Su cosa continuo a lavorare oggi dopo ieri notte:
 <pre>def data():
     time.sleep(1)
