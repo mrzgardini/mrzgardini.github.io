@@ -5,6 +5,17 @@
 
 <item>
 <description>
+<![CDATA[Kevin è sul bollettino! <a href='https://mathstodon.xyz/@tao/112221953164171331'>https://mathstodon.xyz/@tao/112221953164171331</a>
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-04-10 15:01:49
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Formule negli indicizzatori, matrici cartesiane, taaanti warning, gira in backtest, conti della serva. Stase/domani credo di operare in tempo reale (Si aggiungeranno circa 50 righe alla logica).
 df['op'] = 0
 for x in range(len(df)):
