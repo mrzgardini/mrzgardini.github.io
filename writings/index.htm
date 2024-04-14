@@ -56,6 +56,15 @@ Logica matematica, teoria dei numeri, calcolo mentale, giganti sistemi di equazi
 
 
 
+<div class='data' id='2024-04-14 22:07:23'>
+2024-04-14 22:07:23
+</div>
+<div>
+In tempo reale:<br> <pre><br> from binance.spot import Spot<br> import time<br> client = Spot(base_url='https://testnet.binance.vision', api_key=OMISSIS', api_secret='OMISSIS')<br> df = pd.DataFrame()<br> count1 = 0<br> count2 = 0<br> def data():<br>     global df<br>     price = client.avg_price(symbol = 'DOGEUSDT')<br>     price_df = pd.json_normalize(price)<br>     df = pd.concat([df, price_df])<br> def moving_average():<br>     df["x"]=df['price'].rolling(window=5, min_periods=5).mean()<br>     df["y"]=df['price'].rolling(window=21, min_periods=21).mean()<br>     df['x'] = df['x'].fillna(0)<br>     df['y'] = df['y'].fillna(0)<br> for x in range(0, 60):<br>     time.sleep(1)<br>     data()<br>     moving_average()<br> </pre><br> <pre><br> 0  5  0.17022520  1713003824707  0.000000  0.000000<br> 0  5  0.17022520  1713003824707  0.000000  0.000000<br> 0  5  0.17023085  1713003827848  0.000000  0.000000<br> ...<br> 0  5  0.17040612  1713003904345  0.170406  0.170395<br> 0  5  0.17040612  1713003904345  0.170406  0.170396<br> 0  5  0.17040612  1713003904345  0.170406  0.170397<br> </pre><br> Si rompe qui dove uso logica e formule un po' più spinte come indicizzatori, qualche consiglio su come debuggare? Sto lavorando di corsa su jupyter ma ho visual studio code che ha un'estensione microsoft per il debug di python vanilla, la conoscete?<br> <pre><br> def logic():<br>     global count1<br>     global count2<br>     count1 = count1 + 1<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] <= df['y'].loc[y]:<br>                 df['op'].loc[x] = 'BUY'<br>                 df['count'].loc[x] = count1<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] > df['y'].loc[y]:<br>                 df['op'].loc[x] = 0<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():  <br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] > df['y'].loc[y]:<br>                 df['op'].loc[x] = 'SELL'<br>                 df['count'].loc[x] = count1<br>     if (df['x'].loc[x]).any() <= (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] <= df['y'].loc[y]:<br>                 df['op'].loc[x] = 0<br> </pre><br> 
+</div>
+<br>
+
+
 <div class='data' id='2024-04-14 22:05:43'>
 2024-04-14 22:05:43
 </div>
