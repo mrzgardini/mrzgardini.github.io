@@ -56,6 +56,15 @@ Logica matematica, teoria dei numeri, calcolo mentale, giganti sistemi di equazi
 
 
 
+<div class='data' id='2024-04-16 00:30:40'>
+2024-04-16 00:30:40
+</div>
+<div>
+Funziona, sono veramente euforico. : D<br> <pre><br> from binance.spot import Spot<br> import time<br> import pandas as pd<br> import numpy as np<br> client = Spot(base_url='https://testnet.binance.vision', api_key='OMISSIS', api_secret='OMISSIS')<br> df = pd.DataFrame()<br> count1 = 0<br> count2 = 0<br> df['op'] = 0<br> def data():<br>     global df<br>     price = client.avg_price(symbol = 'DOGEUSDT')<br>     price_df = pd.json_normalize(price)<br>     df = pd.concat([df, price_df])<br>     df.reset_index(inplace=True, drop=True)<br>     df['op'] = df['op'].fillna(0)<br> def moving_average():<br>     df["x"]=df["price"].rolling(window=5, min_periods=5).mean()<br>     df["y"]=df["price"].rolling(window=21, min_periods=21).mean()<br>     df['x'] = df['x'].fillna(0)<br>     df['y'] = df['y'].fillna(0)<br> def logic():<br>     global count1<br>     global count2<br>     count1 = count1 + 1<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] <= df['y'].loc[y]:<br>                 df['op'].loc[x] = 'BUY'<br>                 df['count'].loc[x] = count1<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] > df['y'].loc[y]:<br>                 df['op'].loc[x] = 0<br>     if (df['x'].loc[x]).any() > (df['y'].loc[x]).any():  <br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] > df['y'].loc[y]:<br>                 df['op'].loc[x] = 'SELL'<br>                 df['count'].loc[x] = count1<br>     if (df['x'].loc[x]).any() <= (df['y'].loc[x]).any():<br>         if x == 0:<br>             y = x<br>         if x > 0:<br>             y = x - 1<br>             if df['x'].loc[y] <= df['y'].loc[y]:<br>                 df['op'].loc[x] = 0<br> for x in range(0, 3):<br>     time.sleep(1)<br>     data()<br>     moving_average()<br>     logic()<br> </pre><br> 
+</div>
+<br>
+
+
 <div class='data' id='2024-04-16 00:29:33'>
 2024-04-16 00:29:33
 </div>
