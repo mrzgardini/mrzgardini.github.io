@@ -6,6 +6,17 @@
 
 <item>
 <description>
+<![CDATA[Stavo leggendo alcuni ragazzi cinesi che per un lavoro di ml dividono una serie temporale X in una componente periodica <div class='math'>P(t)</div> e una di trend <div class='math'>T(t)</div> tale che <div class='math'>X(t) = P(t) + T(t)</div>. Figo.
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-05-04 11:24:17
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Meditron: An LLM suite especially suited for low-resource medical settings leveraging Meta Llama. <a href='https://ai.meta.com/blog/llama-2-3-meditron-yale-medicine-epfl-open-source-llm/'>https://ai.meta.com/blog/llama-2-3-meditron-yale-medicine-epfl-open-source-llm/</a>.
 ]]>
 </description>
