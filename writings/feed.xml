@@ -6,6 +6,17 @@
 
 <item>
 <description>
+<![CDATA[Mi pare di capire che il più comune di processo per la prova degli algoritmi sia la vettorizzazione del codice, con vettori e matrici calcolate col numpy. Però mi pare interessante anche l'approccio ad eventi, dove il codice è sensibile a nuovi input.
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-05-13 10:14:47
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Dave Neary. <a href='https://mathstodon.xyz/@dneary/112418958661950505'>https://mathstodon.xyz/@dneary/112418958661950505</a>.
 ]]>
 </description>
