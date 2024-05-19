@@ -6,6 +6,19 @@
 
 <item>
 <description>
+<![CDATA[Un modo simpatico per fare na sommatoria:
+<pre>for x in df['w']:
+  y += x</pre>
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-05-19 06:03:30
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[GCHQ. <a href='https://twitter.com/GCHQ/status/1790372111342572023'>https://twitter.com/GCHQ/status/1790372111342572023</a>.
 ]]>
 </description>
