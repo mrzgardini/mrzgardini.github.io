@@ -62,6 +62,15 @@ Logica matematica, teoria dei numeri, calcolo mentale, giganti sistemi di equazi
 <br>
 
 
+<div class='data' id='2024-05-19 06:04:32'>
+2024-05-19 06:04:32
+</div>
+<div>
+La mia funzione per il backtest con la sommatoria. Io felicito.<br> <pre>def backtest():<br>     global n, o, c_df<br>     n = 0<br>     o = 0<br>     if c_df['d'].loc[x] == 1:<br>         c_df['w'].loc[x] = c_df['close'].loc[x]<br>     if c_df['d'].loc[x] == -1:<br>         c_df['z'].loc[x] = c_df['close'].loc[x]<br>     c_df['w'] = c_df['w'].fillna(0)<br>     c_df['z'] = c_df['z'].fillna(0)<br>     c_df = c_df.astype({'w': 'float', 'z': 'float'})<br>     for p in c_df['w']:<br>         n += p<br>     for p in c_df['z']:<br>         o += p</pre><br> <pre>comprato:<br> 122790.28<br> venduto:<br> 61461.63</pre><br> 
+</div>
+<br>
+
+
 <div class='data' id='2024-05-19 06:03:30'>
 2024-05-19 06:03:30
 </div>
