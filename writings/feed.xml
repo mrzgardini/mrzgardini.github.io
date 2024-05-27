@@ -6,6 +6,17 @@
 
 <item>
 <description>
+<![CDATA[Lumbroso "dice roller", analysis to port the algorithm to 32 bit integers https://math.stackexchange.com/questions/4923086/lumbroso-dice-roller-analysis-to-port-the-algorithm-to-32-bit-integers
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-05-27 04:52:07
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[IBM Hexadecimal Floating Point https://blogs.mathworks.com/cleve/2024/05/25/ibm-hexadecimal-floating-point/
 
 The System/360 hexadecimal format is used in many industries for the preservation of data files.
