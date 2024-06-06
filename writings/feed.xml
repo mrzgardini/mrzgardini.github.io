@@ -6,6 +6,21 @@
 
 <item>
 <description>
+<![CDATA[Borse positive con il primo taglio dei tassi. Milano la migliore (+0,9%) con le banche
+
+La rotta di Francoforte per i prossimi mesi appare più incerta, con la Bce che conferma l’approccio ’data oriented’. A Wall Street record intraday per S&P e Nasdaq. Euro/dollaro risale brevemente sopra 1,09, si allarga lo spread in area 131 punti.
+
+ilsole
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-06-06 17:44:51
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[A multistep strategy for polynomial system solving over finite fields and a new algebraic attack on the stream cipher Trivium https://arxiv.org/pdf/2304.07820
 
 In this paper we introduce a multistep generalization of the guess-and-determine or hybrid strategy for solving a system of multivariate polynomial equations over a finite field. In particular, we propose performing the exhaustive evaluation of a subset of variables stepwise, that is, by incrementing the size of such subset each time that an evaluation leads to a polynomial system which is possibly unfeasible to solve. The decision about which evaluation to extend is based on a preprocessing consisting in computing an incomplete Grobner basis after the current evaluation, which possibly generates linear polynomials that are used to eliminate further variables. If the number of remaining variables in the system is deemed still too high, the evaluation is extended and the preprocessing is iterated. Otherwise, we solve the system by a complete Grobner basis computation.
