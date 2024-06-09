@@ -6,6 +6,19 @@
 
 <item>
 <description>
+<![CDATA[The geometry of maximal development and shock formation for the Euler equations in multiple space dimensions https://arxiv.org/pdf/2310.08564
+
+We construct a fundamental piece of the boundary of the maximal globally hyperbolic development (MGHD) of Cauchy data for the multi-dimensional compressible Euler equations, which is necessary for the local shock development problem. For an open set of compressive and generic initial data, we construct unique solutions to the Euler equations in the maximal spacetime region below a given time-slice, beyond the time of the first singularity; at any point in this spacetime, the solution can be smoothly and uniquely computed by tracing both the fast and slow acoustic characteristic surfaces backward-in-time, until reaching the Cauchy data prescribed along the initial time-slice. The future temporal boundary of this spacetime region is a singular hypersurface, containing the union of three sets: first, a co-dimension-2 surface of “first singularities” called the pre-shock; second, a downstream hypersurface called the singular set emanating from the pre-shock, on which the Euler solution experiences a continuum of gradient catastrophes; third, an upstream hypersurface consisting of a Cauchy horizon emanating from the pre-shock, which the Euler solution cannot reach. We develop a new geometric framework for the description of the acoustic characteristic surfaces which is based on the Arbitrary Lagrangian Eulerian (ALE) framework, and combine this with a new type of differentiated Riemann variables which are linear combinations of gradients of velocity, sound speed, and the curvature of the fast acoustic characteristic surfaces. With these new variables, we establish uniform Sobolev bounds for solutions to the Euler equations without derivative loss and with optimal regularity.
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-06-09 05:23:10
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[UN chief condemns escalating violence and civilian attacks in Myanmar https://news.un.org/en/story/2024/06/1150751
 
 The UN Secretary-General António Guterres is deeply concerned about escalating violence in Myanmar, he said in a statement released on Thursday.
