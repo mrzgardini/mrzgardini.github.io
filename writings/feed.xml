@@ -6,6 +6,30 @@
 
 <item>
 <description>
+<![CDATA[Where Feynman talks about the study method? https://huggingface.co/chat/conversation/VJxo4Vr
+
+The Feynman Lectures on Physics
+The Character of Physical Law
+QED: The Strange Theory of Light and Matter
+Surely You're Joking, Mr. Feynman!
+Interviews and lectures
+
+The "Feynman Technique" is a distillation of his approach to learning and problem-solving, which can be summarized as follows:
+
+Write down the problem: Clearly define the problem you're trying to solve.
+Teach it to a child: Explain the problem and your solution in simple terms, as if you were teaching a child.
+Identify the gaps: Identify the areas where you're not sure or don't understand.
+Review and refine: Review your explanation, refine your understanding, and fill in the gaps.
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-06-11 20:48:28
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[Please Stop Encrypting with RSA Directly https://soatok.blog/2021/01/20/please-stop-encrypting-with-rsa-directly/
 
 However, there is a problem with the execution of this idea. And this isn’t a problem unique to Zuccnet. Several times per year, I come across some well-meaning software project that makes the same mistake: Encrypting messages with RSA directly is bad.
