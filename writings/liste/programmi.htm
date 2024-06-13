@@ -1,32 +1,47 @@
 <html>
 <head>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<script id='MathJax-script' async src='https://mrzgardini.github.io/writings/mathjax/es5/tex-mml-chtml.js'>
+<script>
+MathJax = {
+tex: {
+inlineMath: [['$', '$'], ['\\(', '\\)']]
+}
+};
+</script>
+<script id='MathJax-script' async src='https://mrzgardini.github.io/writings/librerie/mathjax/es5/tex-mml-chtml.js'>
 </script>
 <style>
 @font-face {
-font-family: liberation-sans;
-src: url('https://mrzgardini.github.io/liberation-sans.ttf');
+font-family: noto-sans-regular;
+src: url('https://mrzgardini.github.io/noto-sans-regular.ttf');
 }
 @font-face {
-font-family: liberation-mono;
-src: url('https://mrzgardini.github.io/writings/liberation-mono.ttf');
+font-family: noto-sans-mono-regular;
+src: url('https://mrzgardini.github.io/writings/noto-sans-mono-regular.ttf');
 }
-h1, a, p {
-font-family: liberation-sans;
+.bio {
+margin-bottom: 50px;
 }
-h1, a, p {
+.text {
+margin-bottom: 100px;
+overflow-x: hidden;
+overflow-x: scroll;
+}
+div, h1, a, p {
+font-family: noto-sans-regular;
+}
+div, h1, a, p {
 word-wrap: break-word;
+}
+.data
+{
+font-size: 10px;
 }
 img {
 max-width: 100%;
 }
 pre {
-font-family: liberation-mono;
-overflow-x: hidden;
-overflow-x: scroll;
-}
-.math {
+font-family: noto-sans-mono-regular;
 overflow-x: hidden;
 overflow-x: scroll;
 }
@@ -47,99 +62,99 @@ Programmi che uso
 In sostanza roba per leggere, scrivere, calcolare e programmare.
 </p>
 <p>
-I programmi che uso su ubuntu (molti sono disponibili pure per windows):
+I programmi che uso su debian (molti sono disponibili pure per windows):
 </p>
 <p>
-<a href='https://packages.debian.org/sid/docker.io'>Docker</a>, contenitori linux
+<a href='https://packages.debian.org/sid/docker.io'>docker</a>, contenitori linux
 </p>
 <p>
-<a href='https://packages.debian.org/sid/calibre'>Calibre</a>, convertitore libri
+<a href='https://packages.debian.org/sid/calibre'>calibre</a>, convertitore libri
 </p>
 <p>
-<a href='https://packages.debian.org/sid/git'>Git</a>, sistema di controllo revisioni
+<a href='https://packages.debian.org/sid/git'>git</a>, sistema di controllo revisioni
 </p>
 <p>
-<a href='https://packages.debian.org/sid/goldendict'>GoldenDict</a>, dizionari
+<a href='https://packages.debian.org/sid/goldendict'>goldendict</a>, dizionari
 </p>
 <p>
-<a href='https://packages.debian.org/sid/pandoc'>Pandoc</a>, convertitore libri
-</p>
-<p>
-<a href='https://packages.debian.org/it/sid/qbittorrent'>Tramsmission</a>, bittorrent
+<a href='https://packages.debian.org/sid/transmission-gtk'>transmission</a>, bittorrent
 </p>
 <p>
 <a href='https://packages.debian.org/it/sid/sshfs'>sshfs</a>, client per filesystem basato sul protocollo SFTP
 </p>
 <p>
-<a href='https://packages.debian.org/it/sid/texlive-full'>TeX Live</a>, tex
+<a href='https://packages.debian.org/it/sid/texlive-full'>tex live</a>, tex
 </p>
 <p>
-<a href='https://packages.debian.org/it/sid/vlc'>VLC</a>, lettore multimediale
+<a href='https://packages.debian.org/it/sid/vlc'>vlc</a>, lettore multimediale
 </p>
 <p>
-<a href='https://wiki.debian.org/Brave'>Firefox</a>, browser
+<a href='https://packages.debian.org/sid/firefox-esr'>firefox</a>, browser
 </p>
 <p>
-<a href='https://packages.debian.org/it/sid/python3'>Python</a>, linguaggio di programmazione (Ci faccio di tutto, dall'hacking alla matematica)
+<a href='https://packages.debian.org/it/sid/python3'>python</a>, linguaggio di programmazione (Ci faccio di tutto, dall'hacking alla matematica)
 </p>
 <p>
-<a href='https://packages.debian.org/it/sid/sagemath'>SageMath</a>, ombrello in python per la maggior parte dei programmi di matematica
+<a href='https://packages.debian.org/it/sid/sagemath'>sagemath</a>, ombrello in python per la maggior parte dei programmi di matematica
 </p>
 <p>
-<a href='https://packages.debian.org/it/sid/freecad'>FreeCAD</a>, cad
+<a href='https://packages.debian.org/it/sid/freecad'>freecad</a>, cad
 </p>
 <p>
-<a href='https://github.com/rapid7/metasploit-framework'>Metasploit Framework</a>, sviluppo ed esecuzione di exploits, è noto anche per aver pubblicato alcuni degli exploits più sofisticati
+<a href='https://github.com/rapid7/metasploit-framework'>metasploit</a>, sviluppo ed esecuzione di exploits, è noto anche per aver pubblicato alcuni degli exploits più sofisticati
 </p>
 <p>
-<a href='https://packages.debian.org/it/sid/ssh'>SSH</a>, shell sicura
+<a href='https://packages.debian.org/it/sid/ssh'>ssh</a>, shell sicura
 </p>
 <p>
-<a href='https://github.com/NationalSecurityAgency/ghidra/'>Ghidra</a>, reverse engineering
+<a href='https://github.com/NationalSecurityAgency/ghidra/'>ghidra</a>, reverse engineering
 </p>
 <p>
-<a href='https://it.wikipedia.org/wiki/Mathematica'>Mathematica</a>, ambiente di calcolo simbolico e numerico
+<a href='https://en.wikipedia.org/wiki/Wolfram_Mathematica'>mathematica</a>, ambiente di calcolo simbolico e numerico
 </p>
 <p>
-<a href='https://it.wikipedia.org/wiki/MATLAB'>MATLAB</a>, ambiente di calcolo numerico e simbolico
+<a href='https://en.wikipedia.org/wiki/MATLAB'>matlab</a>, ambiente di calcolo numerico e simbolico
 </p>
 <p>
-<a href='https://it.wikipedia.org/wiki/MATLAB'>Thunderbird</a>, client di posta elettronica
+<a href='https://packages.debian.org/sid/thunderbird'>thunderbird</a>, client di posta elettronica
 </p>
 <p>
-<a href='https://it.wikipedia.org/wiki/MATLAB'>Visual Studio Code</a>, editor di testo
+<a href='https://github.com/microsoft/vscode'>visual studio code</a>, editor di testo
 </p>
 <p>
-<a href='https://it.wikipedia.org/wiki/MATLAB'>QEMU</a>, emulatore
+<a href='https://packages.debian.org/bookworm/qemu-system-x86'>qemu</a>, emulatore
 </p>
 <p>
-<a href='https://packages.debian.org/sid/libreoffice'>LibreOffice</a>, suite di produttività (+ TexMaths, sì le immagini delle formule sono modificabili)
+<a href='https://packages.debian.org/sid/libreoffice'>libreoffice</a>, suite di produttività (+ TexMaths, sì le immagini delle formule sono modificabili)
 </p>
 <br>
 <p>
 I programmi che uso su windows:
 </p>
 <p>
-<a href='https://it.wikipedia.org/wiki/Adobe_Acrobat'>Adobe Acrobat</a>, desktop publishing
+<a href='https://en.wikipedia.org/wiki/Adobe_Acrobat'>acrobat</a>, desktop publishing
+</p>
+<p>
+<a href='https://en.wikipedia.org/wiki/Amazon_Kindle'>kindle</a>, desktop publishing
 </p>
 <br>
 <p>
 I programmi che uso su android:
 </p>
 <p>
-<a href='https://it.wikipedia.org/wiki/Adobe_Acrobat'>Adobe Acrobat</a>, desktop publishing
+<a href='https://en.wikipedia.org/wiki/Adobe_Acrobat'>acrobat</a>, desktop publishing
 </p>
 <p>
-<a href='https://play.google.com/store/apps/details?id=posteitaliane.posteapp.appbpol&hl=it&gl=US'>BancoPosta</a>, conto
+<a href='https://play.google.com/store/apps/details?id=posteitaliane.posteapp.appbpol'>BancoPosta</a>, conto
 </p>
 <p>
-<a href='https://wiki.debian.org/Brave'>Firefox</a>, browser
+<a href='https://packages.debian.org/sid/firefox-esr'>firefox</a>, browser
 </p>
 <p>
-<a href='https://packages.debian.org/it/sid/vlc'>VLC</a>, lettore multimediale
+<a href='https://packages.debian.org/it/sid/vlc'>vlc</a>, lettore multimediale
 </p>
 <p>
-<a href='https://play.google.com/store/apps/details?id=com.whatsapp'>WhatsApp</a>, messaggistica
+<a href='https://play.google.com/store/apps/details?id=com.whatsapp'>whatsapp</a>, messaggistica
 </p>
 </body>
 </html>
