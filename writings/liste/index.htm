@@ -1,32 +1,47 @@
 <html>
 <head>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<script id='MathJax-script' async src='https://mrzgardini.github.io/writings/mathjax/es5/tex-mml-chtml.js'>
+<script>
+MathJax = {
+tex: {
+inlineMath: [['$', '$'], ['\\(', '\\)']]
+}
+};
+</script>
+<script id='MathJax-script' async src='https://mrzgardini.github.io/writings/librerie/mathjax/es5/tex-mml-chtml.js'>
 </script>
 <style>
 @font-face {
-font-family: liberation-sans;
-src: url('https://mrzgardini.github.io/liberation-sans.ttf');
+font-family: noto-sans-regular;
+src: url('https://mrzgardini.github.io/noto-sans-regular.ttf');
 }
 @font-face {
-font-family: liberation-mono;
-src: url('https://mrzgardini.github.io/writings/liberation-mono.ttf');
+font-family: noto-sans-mono-regular;
+src: url('https://mrzgardini.github.io/writings/noto-sans-mono-regular.ttf');
 }
-h1, a, p {
-font-family: liberation-sans;
+.bio {
+margin-bottom: 50px;
 }
-h1, a, p {
+.text {
+margin-bottom: 100px;
+overflow-x: hidden;
+overflow-x: scroll;
+}
+div, h1, a, p {
+font-family: noto-sans-regular;
+}
+div, h1, a, p {
 word-wrap: break-word;
+}
+.data
+{
+font-size: 10px;
 }
 img {
 max-width: 100%;
 }
 pre {
-font-family: liberation-mono;
-overflow-x: hidden;
-overflow-x: scroll;
-}
-.math {
+font-family: noto-sans-mono-regular;
 overflow-x: hidden;
 overflow-x: scroll;
 }
