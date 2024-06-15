@@ -1,3 +1,5 @@
+# backup.py
+
 import os
 
 os.system('/usr/bin/rsync -av --delete /media/disco1 /media/disco2/backup/disco1')
