@@ -6,6 +6,17 @@
 
 <item>
 <description>
+<![CDATA[Aww... https://munchmeyer.physics.wisc.edu/lecture-notes/
+]]>
+</description>
+<link>
+https://mrzgardini.github.io/writings/index.htm#2024-07-06 12:45:22
+</link>
+</item>
+
+
+<item>
+<description>
 <![CDATA[European space agency https://github.com/esa/torchquad
 Numerical integration in arbitrary dimensions on the GPU using PyTorch / TF / JAX.
 ]]>
