@@ -1,0 +1,43 @@
+/-
+A journey in formal proof with Analisi matematica 1
+-/
+
+/-
+Maurizio Gardini
+-/
+
+/-
+29 january 2026
+-/
+
+/-
+30 january 2026
+-/
+
+import Mathlib
+
+theorem dicotomia_alternativa (x : ℝ) : x > 0 ∨ x = 0 ∨ x < 0 := by
+  by_cases hx_pos : x > 0
+  · exact Or.inl hx_pos
+  · by_cases hx_neg : x < 0
+    · exact Or.inr (Or.inr hx_neg)
+    · have hx_zero : x = 0 := by
+        -- Poiché x non è > 0 e non è < 0, deve essere uguale a 0
+        linarith
+      exact Or.inr (Or.inl hx_zero)
+
+/-
+31 january 2026
+-/
+
+import Mathlib.Data.Real.Basic
+
+example (a b c : ℝ) (hab : a ≤ b) (hbc : b ≤ c) : a ≤ c := by
+  exact le_trans hab hbc
+
+/-
+01 feb 2026
+-/
+
+example (a b : ℝ) (hab : a ≤ b) (hba : b ≤ a) : a = b := by
+  exact le_antisymm hab hba
