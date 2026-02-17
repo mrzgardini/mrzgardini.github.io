@@ -36,7 +36,7 @@ example (a b c : ℝ) (hab : a ≤ b) (hbc : b ≤ c) : a ≤ c := by
   exact le_trans hab hbc
 
 /-
-01 feb 2026, 10:02
+01 february 2026, 10:02
 -/
 
 import Mathlib.Data.Real.Basic
