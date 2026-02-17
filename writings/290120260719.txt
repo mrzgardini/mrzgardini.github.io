@@ -11,7 +11,7 @@ Maurizio Gardini
 -/
 
 /-
-30 january 2026
+30 january 2026, 22:00
 -/
 
 import Mathlib
@@ -27,7 +27,7 @@ theorem dicotomia_alternativa (x : ℝ) : x > 0 ∨ x = 0 ∨ x < 0 := by
       exact Or.inr (Or.inl hx_zero)
 
 /-
-31 january 2026
+31 january 2026, 09:00
 -/
 
 import Mathlib.Data.Real.Basic
@@ -36,8 +36,10 @@ example (a b c : ℝ) (hab : a ≤ b) (hbc : b ≤ c) : a ≤ c := by
   exact le_trans hab hbc
 
 /-
-01 feb 2026
+01 feb 2026, 10:02
 -/
+
+import Mathlib.Data.Real.Basic
 
 example (a b : ℝ) (hab : a ≤ b) (hba : b ≤ a) : a = b := by
   exact le_antisymm hab hba
