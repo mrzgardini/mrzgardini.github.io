@@ -1,12 +1,8 @@
 /-
 A journey in formal proof with Analisi matematica 1
--/
 
-/-
 Maurizio Gardini
--/
 
-/-
 29 january 2026
 -/
 
