@@ -69,7 +69,7 @@ Get $a, b \in \mathbb{R}$ we prove that if $a \le b$ and $b \le a$ then $a = b$.
 ```
 le_antisymm : {α : Type} [PartialOrder α] {a b : α} : a ≤ b → b ≤ a → a = b
 ```
-We use le_antisymm, which is a theorem already proved in Mathlib. The lean code here [2].
+We use le_antisymm, which is a theorem already proved in Mathlib. The Lean code here [2].
 
 # References
 
@@ -93,7 +93,7 @@ Get $a, b, c \in \mathbb{R}$ we prove that if $a \le b$ and $b \le c$ then $a \l
 ```
 le_trans : a ≤ b → b ≤ c → a ≤ c
 ```
-We use le_trans, which is a theorem already proved in Mathlib.
+We use le_trans, which is a theorem already proved in Mathlib. The Lean code here [2].
 
 # References
 
@@ -132,7 +132,7 @@ If $x > 0$ is false and $x < 0$ is false, that is, $x \le 0$ and $x \geq 0$ we h
 ```
 exact Or.inr (Or.inl hx_zero)
 ```
-To prove $x > 0 \vee x = 0 \vee x < 0$ we have $x = 0$, we choose $x = 0 \vee x < 0$ and then $x = 0$. The lean code here [2].
+To prove $x > 0 \vee x = 0 \vee x < 0$ we have $x = 0$, we choose $x = 0 \vee x < 0$ and then $x = 0$. The Lean code here [2].
 
 # References
 
