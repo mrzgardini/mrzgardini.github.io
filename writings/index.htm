@@ -1,52 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Writings</title>
 <script>
 window.MathJax = {
-tex: {
-inlineMath: [['$', '$'], ['\\(', '\\)']],
-displayMath: [['$$', '$$'], ['\\[', '\\]']],
-processEscapes: true
-},
-options: { processHtmlClass: 'mathjax-render' }
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
+  options: { processHtmlClass: 'mathjax-render' }
 };
 </script>
 <script src="https://mrzgardini.github.io/marked/marked.min.js"></script>
 <script src="https://mrzgardini.github.io/mathJax/tex-mml-chtml.js"></script>
 <style>
-@font-face {
-font-family: noto-sans-regular;
-src: url('https://mrzgardini.github.io/noto-sans-regular.ttf');
-}
-h1, h2, h3, a, p {
-font-family: noto-sans-regular;
-}
-body {
-margin: 0 auto;
-max-width: 36em;
-padding: 0 1em;
-box-sizing: border-box;
-}
-pre, code {
-white-space: pre-wrap;
-word-wrap: break-word;
-overflow-x: auto;
-}
-.mathjax-render {
-overflow-x: auto;
-overflow-y: hidden;
-}
-img, embed, iframe {
-max-width: 100%;
-}
+@font-face { font-family: noto-sans-regular; src: url('https://mrzgardini.github.io/noto-sans-regular.ttf'); }
+h1, h2, h3, a, p { font-family: noto-sans-regular; }
+body { margin: 0 auto; max-width: 36em; padding: 0 1em; box-sizing: border-box; }
+pre, code, .mathjax-render { overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; }
+img, embed, iframe { max-width: 100%; }
 </style>
 </head>
 <body>
 <div id="content" class="mathjax-render"></div>
-<script id="markdown-source" type="text/markdown">
 
+<script id="markdown-source" type="text/markdown">
 # Wr171ng5 <img src="rat.png" align="right" height="40">
 
 (Post) 16 august 2026, 21:55 {#160820262155} <br>
@@ -60,53 +37,39 @@ Maurizio Gardini, Average of matrices, 2025. [https://mrzgardini.github.io/writi
 
 (Article) 30 december 2024, 06:21 {#301220240621} <br>
 Maurizio Gardini, Sagemath as a calculator, 2024. [https://mrzgardini.github.io/writings/301220240621](https://mrzgardini.github.io/writings/301220240621)
-
 </script>
+
 <script>
-const renderer = new marked.Renderer();
-renderer.link = ({ href, title, text }) => {
-const titleAttr = title ? ` title="${title}"` : '';
-return `<a href="${href}" target="_blank" rel="noopener noreferrer"${titleAttr}>${text}</a>`;
+window.onload = () => {
+  const container = document.getElementById('content');
+  const mathBlocks = [];
+
+  // 1. Isola la sintassi MathJax
+  let md = document.getElementById('markdown-source').innerHTML.replace(/(\$\$[\s\S]+?\$\$|\$[^\$]+?\$)/g, m => {
+    mathBlocks.push(m);
+    return `%%MATH_${mathBlocks.length - 1}%%`;
+  });
+
+  // 2. Parsing con marked standard
+  let html = marked.parse(md);
+
+  // 3. Ripristina MathJax
+  html = html.replace(/%%MATH_(\d+)%%/g, (_, i) => 
+    mathBlocks[i].replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')
+  );
+
+  // 4. Assegna gli id {#...} a qualsiasi tag HTML generato (<p>, <h1>, etc.) e apre i link in una nuova scheda
+  container.innerHTML = html
+    .replace(/<a /g, '<a target="_blank" rel="noopener noreferrer" ')
+    .replace(/<([^>]+)>([\s\S]*?)\{#(.+?)\}([\s\S]*?)<\/\1>/g, '<$1 id="$3">$2$4</$1>');
+
+  // 5. Rendering MathJax e Scroll all'anchor
+  if (window.MathJax?.typesetPromise) {
+    MathJax.typesetPromise([container]).then(() => {
+      if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
+    });
+  }
 };
-renderer.heading = ({ text, depth }) => {
-const idMatch = text.match(/\{#(.+?)\}/);
-const id = idMatch ? idMatch[1] : text.toLowerCase().trim().replace(/[^\w]+/g, '-');
-const cleanText = text.replace(/\{#.+?\}/, '').trim();
-return `<h${depth} id="${id}">${cleanText}</h${depth}>`;
-};
-renderer.paragraph = ({ text }) => {
-const idMatch = text.match(/\{#(.+?)\}/);
-const cleanText = text.replace(/\{#.+?\}/, '').trim();
-if (idMatch) {
-return `<p id="${idMatch[1]}">${cleanText}</p>`;
-}
-return `<p>${cleanText}</p>`;
-};
-marked.use({ renderer });
-function render() {
-const container = document.getElementById('content');
-const rawMarkdown = document.getElementById('markdown-source').innerHTML;
-const mathBlocks = [];
-let tempText = rawMarkdown.replace(/(\$\$[\s\S]+?\$\$|\$[^\$]+?\$)/g, (match) => {
-mathBlocks.push(match);
-return `%%MATH_${mathBlocks.length - 1}%%`;
-});
-let html = marked.parse(tempText);
-html = html.replace(/%%MATH_(\d+)%%/g, (match, index) => {
-return mathBlocks[index].replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
-});
-container.innerHTML = html;
-if (window.MathJax && MathJax.typesetPromise) {
-MathJax.typesetPromise([container]).then(() => {
-container.classList.add('ready');
-if (window.location.hash) {
-const target = document.querySelector(window.location.hash);
-if (target) target.scrollIntoView();
-}
-});
-}
-}
-window.onload = render;
 </script>
 </body>
 </html>
