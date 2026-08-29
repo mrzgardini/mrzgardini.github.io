@@ -47,7 +47,6 @@ max-width: 100%;
 <div id="content" class="mathjax-render"></div>
 <script id="markdown-source" type="text/markdown">
 
-
 # Wr171ng5 <img src="rat.png" align="right" height="40">
 
 (Post) 16 august 2026, 21:55 {#160820262155} <br>
@@ -62,7 +61,6 @@ Maurizio Gardini, Average of matrices, 2025. [https://mrzgardini.github.io/writi
 (Article) 30 december 2024, 06:21 {#301220240621} <br>
 Maurizio Gardini, Sagemath as a calculator, 2024. [https://mrzgardini.github.io/writings/301220240621](https://mrzgardini.github.io/writings/301220240621)
 
-
 </script>
 <script>
 const renderer = new marked.Renderer();
@@ -75,6 +73,14 @@ const idMatch = text.match(/\{#(.+?)\}/);
 const id = idMatch ? idMatch[1] : text.toLowerCase().trim().replace(/[^\w]+/g, '-');
 const cleanText = text.replace(/\{#.+?\}/, '').trim();
 return `<h${depth} id="${id}">${cleanText}</h${depth}>`;
+};
+renderer.paragraph = ({ text }) => {
+const idMatch = text.match(/\{#(.+?)\}/);
+const cleanText = text.replace(/\{#.+?\}/, '').trim();
+if (idMatch) {
+return `<p id="${idMatch[1]}">${cleanText}</p>`;
+}
+return `<p>${cleanText}</p>`;
 };
 marked.use({ renderer });
 function render() {
